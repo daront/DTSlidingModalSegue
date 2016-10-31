@@ -87,7 +87,7 @@ public class DTSlidingRightSegue: UIStoryboardSegue {
 
 public class DTSlidingRightUnwindSegue: UIStoryboardSegue {
     
-    var completion:(()->Void)?
+    public var completion:(()->Void)?
     
     override public func perform() {
         let preV = self.sourceViewController.view

@@ -21,17 +21,17 @@ Swift 2.0
 Add into your Podfile.
 
 ```:Podfile
-pod "DTLoadingIndicator"
+pod "DTSlidingModalSegue"
 ```
 
 Then `$ pod install`
 
 ## How to use
 
-**present**
+**present** -
 In your storyboard, just assign a class `DTSlidingLeftSegue` or `DTSlidingRightSegue` to a segue.
 
-**unwind**
+**unwind** -
 To dismiss a viewController, you need to create an unwind segue and assign it with a class `DTSlidingLeftUnwindSegue` or `DTSlidingLeftUnwindSegue`.
 
 Note: in iOS8 and below, you might need to override `segueForUnwindingToViewController`
@@ -41,6 +41,9 @@ override func segueForUnwindingToViewController(toViewController: UIViewControll
     return DTSlidingRightUnwindSegue(identifier: identifier, source: fromViewController, destination: toViewController)
 }
 ```
+
+If you don't know wtx is unwind segue, please take a look at this link
+http://stackoverflow.com/questions/12561735/what-are-unwind-segues-for-and-how-do-you-use-them
 
 ## Author
 
