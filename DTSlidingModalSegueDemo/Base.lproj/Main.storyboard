@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xjp-33-SrU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DTSlidingModalSegueDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPy-1M-P9k">
+                                <rect key="frame" x="175" y="72" width="250" height="30"/>
+                                <state key="normal" title="System UINaviationController (Push)"/>
+                                <connections>
+                                    <segue destination="KuC-ea-2Og" kind="show" id="agA-jg-ZC4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-um-psH">
+                                <rect key="frame" x="204" y="110" width="192" height="30"/>
+                                <state key="normal" title="DTSlidingLeftSegue (Modal)"/>
+                                <connections>
+                                    <segue destination="UyT-xf-YA1" kind="custom" customClass="DTSlidingLeftSegue" customModule="DTSlidingModalSegueDemo" id="YMC-U9-qSV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmX-0r-Fw0">
+                                <rect key="frame" x="199" y="148" width="202" height="30"/>
+                                <state key="normal" title="DTSlidingRightSegue (Modal)"/>
+                                <connections>
+                                    <segue destination="ZN1-8I-JFK" kind="presentation" customClass="DTSlidingRightSegue" customModule="DTSlidingModalSegueDemo" customModuleProvider="target" id="HLV-dQ-C8e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HIB-um-psH" firstAttribute="centerX" secondItem="hPy-1M-P9k" secondAttribute="centerX" id="5ah-5O-oAa"/>
+                            <constraint firstItem="HIB-um-psH" firstAttribute="top" secondItem="hPy-1M-P9k" secondAttribute="bottom" constant="8" id="Uu2-0m-vTT"/>
+                            <constraint firstItem="hPy-1M-P9k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bnA-XS-6be"/>
+                            <constraint firstItem="kmX-0r-Fw0" firstAttribute="centerX" secondItem="HIB-um-psH" secondAttribute="centerX" id="f1B-6a-lpG"/>
+                            <constraint firstItem="hPy-1M-P9k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nhQ-FS-1Jt"/>
+                            <constraint firstItem="kmX-0r-Fw0" firstAttribute="top" secondItem="HIB-um-psH" secondAttribute="bottom" constant="8" id="pil-hD-smt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Whm-tK-JxE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="639"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KD0-OQ-EUZ">
+            <objects>
+                <viewController id="KuC-ea-2Og" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kGR-Ip-gpY"/>
+                        <viewControllerLayoutGuide type="bottom" id="uUu-VT-LUD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pWe-kF-7A5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm just pushed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0H-cQ-89p">
+                                <rect key="frame" x="242" y="290" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70480285229999995" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="C0H-cQ-89p" firstAttribute="centerX" secondItem="pWe-kF-7A5" secondAttribute="centerX" id="g3J-tB-lLp"/>
+                            <constraint firstItem="C0H-cQ-89p" firstAttribute="centerY" secondItem="pWe-kF-7A5" secondAttribute="centerY" id="usk-JG-XvR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHf-w7-OJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="639"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pjr-JX-c55">
+            <objects>
+                <viewController id="UyT-xf-YA1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ahp-Cc-9Jq"/>
+                        <viewControllerLayoutGuide type="bottom" id="EJd-De-7vi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fhz-MP-DYt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm just presented modally with DTSlidingLeftSegue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXV-IQ-h3N">
+                                <rect key="frame" x="20" y="290" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-1f-7BP">
+                                <rect key="frame" x="182" y="319" width="236" height="30"/>
+                                <state key="normal" title="Back (DTSlidingLeftUnwindSegue)"/>
+                                <connections>
+                                    <segue destination="pKU-0q-USb" kind="unwind" identifier="" customClass="DTSlidingLeftUnwindSegue" customModule="DTSlidingModalSegueDemo" customModuleProvider="target" unwindAction="myUnwindAction:" id="9r0-Te-Osx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7434422665" green="0.91800881410000001" blue="0.81083197019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fXV-IQ-h3N" firstAttribute="centerY" secondItem="fhz-MP-DYt" secondAttribute="centerY" id="1ec-ZN-01h"/>
+                            <constraint firstAttribute="trailing" secondItem="fXV-IQ-h3N" secondAttribute="trailing" constant="20" id="EqR-x5-jkx"/>
+                            <constraint firstItem="Dec-1f-7BP" firstAttribute="top" secondItem="fXV-IQ-h3N" secondAttribute="bottom" constant="8" id="SvL-iO-deA"/>
+                            <constraint firstItem="Dec-1f-7BP" firstAttribute="centerX" secondItem="fXV-IQ-h3N" secondAttribute="centerX" id="uge-Ag-bNy"/>
+                            <constraint firstItem="fXV-IQ-h3N" firstAttribute="leading" secondItem="fhz-MP-DYt" secondAttribute="leading" constant="20" id="xgD-8T-B62"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dN-bf-X0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pKU-0q-USb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="1306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PgF-co-RaE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xjp-33-SrU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="23S-QM-ALg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NCB-9b-DnM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jY-Ka-bRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="639"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X62-vk-bpi">
+            <objects>
+                <viewController id="ZN1-8I-JFK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3KW-Ih-qwL"/>
+                        <viewControllerLayoutGuide type="bottom" id="XEb-NL-7d0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SUC-1U-XBF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm just presented modally with DTSlidingRightSegue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gk-zC-aPJ">
+                                <rect key="frame" x="20" y="290" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1f-5w-tZn">
+                                <rect key="frame" x="178" y="319" width="245" height="30"/>
+                                <state key="normal" title="Back (DTSlidingRightUnwindSegue)"/>
+                                <connections>
+                                    <segue destination="pUE-D6-ylV" kind="unwind" identifier="" customClass="DTSlidingRightUnwindSegue" customModule="DTSlidingModalSegueDemo" unwindAction="myUnwindAction:" id="h5g-dK-ZCb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7434422665" green="0.91800881410000001" blue="0.81083197019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Gk-zC-aPJ" firstAttribute="leading" secondItem="SUC-1U-XBF" secondAttribute="leading" constant="20" id="071-QE-UFs"/>
+                            <constraint firstItem="Q1f-5w-tZn" firstAttribute="top" secondItem="6Gk-zC-aPJ" secondAttribute="bottom" constant="8" id="1Gi-Ew-2yI"/>
+                            <constraint firstItem="Q1f-5w-tZn" firstAttribute="centerX" secondItem="6Gk-zC-aPJ" secondAttribute="centerX" id="Hzw-aL-fBP"/>
+                            <constraint firstItem="6Gk-zC-aPJ" firstAttribute="centerY" secondItem="SUC-1U-XBF" secondAttribute="centerY" id="o2k-ZU-HiO"/>
+                            <constraint firstAttribute="trailing" secondItem="6Gk-zC-aPJ" secondAttribute="trailing" constant="20" id="qyU-v6-MWs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tS6-MV-zMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pUE-D6-ylV" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="1986"/>
+        </scene>
+    </scenes>
+</document>
