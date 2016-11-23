@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xjp-33-SrU">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xjp-33-SrU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,32 +18,32 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPy-1M-P9k">
-                                <rect key="frame" x="175" y="72" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="72" width="250" height="30"/>
                                 <state key="normal" title="System UINaviationController (Push)"/>
                                 <connections>
                                     <segue destination="KuC-ea-2Og" kind="show" id="agA-jg-ZC4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-um-psH">
-                                <rect key="frame" x="204" y="110" width="192" height="30"/>
+                                <rect key="frame" x="91" y="110" width="193" height="30"/>
                                 <state key="normal" title="DTSlidingLeftSegue (Modal)"/>
                                 <connections>
                                     <segue destination="UyT-xf-YA1" kind="custom" customClass="DTSlidingLeftSegue" customModule="DTSlidingModalSegueDemo" id="YMC-U9-qSV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmX-0r-Fw0">
-                                <rect key="frame" x="199" y="148" width="202" height="30"/>
+                                <rect key="frame" x="86.5" y="148" width="202" height="30"/>
                                 <state key="normal" title="DTSlidingRightSegue (Modal)"/>
                                 <connections>
                                     <segue destination="ZN1-8I-JFK" kind="presentation" customClass="DTSlidingRightSegue" customModule="DTSlidingModalSegueDemo" customModuleProvider="target" id="HLV-dQ-C8e"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HIB-um-psH" firstAttribute="centerX" secondItem="hPy-1M-P9k" secondAttribute="centerX" id="5ah-5O-oAa"/>
                             <constraint firstItem="HIB-um-psH" firstAttribute="top" secondItem="hPy-1M-P9k" secondAttribute="bottom" constant="8" id="Uu2-0m-vTT"/>
@@ -64,17 +68,17 @@
                         <viewControllerLayoutGuide type="bottom" id="uUu-VT-LUD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pWe-kF-7A5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm just pushed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0H-cQ-89p">
-                                <rect key="frame" x="242" y="290" width="116" height="21"/>
+                                <rect key="frame" x="129.5" y="323" width="116" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.70480285229999995" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.70480285229999995" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="C0H-cQ-89p" firstAttribute="centerX" secondItem="pWe-kF-7A5" secondAttribute="centerX" id="g3J-tB-lLp"/>
                             <constraint firstItem="C0H-cQ-89p" firstAttribute="centerY" secondItem="pWe-kF-7A5" secondAttribute="centerY" id="usk-JG-XvR"/>
@@ -94,24 +98,24 @@
                         <viewControllerLayoutGuide type="bottom" id="EJd-De-7vi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fhz-MP-DYt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm just presented modally with DTSlidingLeftSegue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXV-IQ-h3N">
-                                <rect key="frame" x="20" y="290" width="560" height="21"/>
+                                <rect key="frame" x="20" y="323" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-1f-7BP">
-                                <rect key="frame" x="182" y="319" width="236" height="30"/>
+                                <rect key="frame" x="69.5" y="352" width="236" height="30"/>
                                 <state key="normal" title="Back (DTSlidingLeftUnwindSegue)"/>
                                 <connections>
                                     <segue destination="pKU-0q-USb" kind="unwind" identifier="" customClass="DTSlidingLeftUnwindSegue" customModule="DTSlidingModalSegueDemo" customModuleProvider="target" unwindAction="myUnwindAction:" id="9r0-Te-Osx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.7434422665" green="0.91800881410000001" blue="0.81083197019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.7434422665" green="0.91800881410000001" blue="0.81083197019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fXV-IQ-h3N" firstAttribute="centerY" secondItem="fhz-MP-DYt" secondAttribute="centerY" id="1ec-ZN-01h"/>
                             <constraint firstAttribute="trailing" secondItem="fXV-IQ-h3N" secondAttribute="trailing" constant="20" id="EqR-x5-jkx"/>
@@ -153,24 +157,24 @@
                         <viewControllerLayoutGuide type="bottom" id="XEb-NL-7d0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SUC-1U-XBF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm just presented modally with DTSlidingRightSegue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gk-zC-aPJ">
-                                <rect key="frame" x="20" y="290" width="560" height="21"/>
+                                <rect key="frame" x="20" y="323" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1f-5w-tZn">
-                                <rect key="frame" x="178" y="319" width="245" height="30"/>
+                                <rect key="frame" x="65.5" y="352" width="245" height="30"/>
                                 <state key="normal" title="Back (DTSlidingRightUnwindSegue)"/>
                                 <connections>
                                     <segue destination="pUE-D6-ylV" kind="unwind" identifier="" customClass="DTSlidingRightUnwindSegue" customModule="DTSlidingModalSegueDemo" unwindAction="myUnwindAction:" id="h5g-dK-ZCb"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.7434422665" green="0.91800881410000001" blue="0.81083197019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.7434422665" green="0.91800881410000001" blue="0.81083197019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Gk-zC-aPJ" firstAttribute="leading" secondItem="SUC-1U-XBF" secondAttribute="leading" constant="20" id="071-QE-UFs"/>
                             <constraint firstItem="Q1f-5w-tZn" firstAttribute="top" secondItem="6Gk-zC-aPJ" secondAttribute="bottom" constant="8" id="1Gi-Ew-2yI"/>
@@ -183,7 +187,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tS6-MV-zMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="pUE-D6-ylV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="1986"/>
+            <point key="canvasLocation" x="1732" y="2065"/>
         </scene>
     </scenes>
 </document>

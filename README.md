@@ -11,8 +11,7 @@ User this segue to present a view controller modally in a UINavigationController
 Try demo project for more info.
 
 ## System Requirements
-iOS 8.0 or above
-Swift 2.0
+iOS 8.0+, Swift 3.0
 
 ## Installation
 
